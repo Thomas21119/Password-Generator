@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <!--This is where password needs to be placed-->
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password" 
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <ul>
+            <li>  Number Of Digits<input type="range" min="8" max="128" value="64" class="slider" id="range" /> <span id="showNumber"></span></li>
+            <li>  <button id="generate" class="btn">Generate Password</button> </li>
+          </ul>
+          <ul class="selectors">
+            <li>  <input type="checkbox" class="checkbox" id="lowerCase"> Lower Case:  </li>
+            <li>  <input type="checkbox" class="checkbox" id="upperCase"> Upper Case:  </li>
+            <li>  <input type="checkbox" class="checkbox" id="specialCharacters"> Special Characters:</li>
+            <li>  <input type="checkbox" class="checkbox" id="numbers">  Numbers:</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
