@@ -32,25 +32,24 @@ form.addEventListener('generate', e => {
   var password = generatePassword(sliderAmount, includeLowerCase, includeUpperCase, includeNumbers, includeSymbols)
 })
 var writePasswordEL = document.getElementById('generate')
-writePasswordEL.addEventListener('click', writePassword)
 var generatePasswordEL = document.getElementById('generate')
+
 generatePasswordEL.addEventListener('click', passwordContents)
 function passwordContents(sliderAmount, includeLowerCase, includeUpperCase, includeNumbers, includeSpecial) {
   if (includeLowerCase) {
-  password.concat(lowerCase)
+  password = password.concat(lowerCase)
+  console.log(password)
 }
   if (includeUpperCase) {
-  password.concat(upperCase)
+  password = password.concat(upperCase)
 }
   if (includeNumbers) {
-  password.concat(numbers)
+  password = password.concat(numbers)
 }  
   if (includeSpecial) {
-  password.concat(special)
+  password = password.concat(special)
+}
+  console.log(password)
 }
 
-}
-function writePassword(password) {
-  console.log(password())
-  console.log (special)
-}
+
