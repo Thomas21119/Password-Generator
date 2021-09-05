@@ -211,7 +211,6 @@ function generatePassword() {
     textArea.value = (numbers(slider.value)) 
   } else if (document.getElementById("specialCharacters").checked) {
     textArea.value = (special(slider.value)) 
-
   } else { 
     textArea.value = ("you must select one criteria")
   }

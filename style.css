@@ -105,6 +105,10 @@ button[disabled] {
   transition: opacity .2s;
 }
 
+ul {
+  list-style: none;
+}
+
 .slider:hover {
   opacity: 1;
 }
