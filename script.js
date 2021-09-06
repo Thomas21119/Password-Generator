@@ -125,7 +125,7 @@ function numbersSpecial(length) {
 //1 checked
 function lowerCase(length) {
   var result = "";
-  var lowerCaseCharacters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  var lowerCaseCharacters = ['abcdefghijklmnopqrstuvwxyz'];
   var lowerCaseCharactersLength = lowerCaseCharacters.length;
   for ( var i = 0; i < length; i++ ) {
     result += lowerCaseCharacters.charAt(Math.floor(Math.random() * lowerCaseCharactersLength));
