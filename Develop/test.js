@@ -30,31 +30,33 @@ function passwordContents() {
   var includeUpperCase = includeUpperCaseElement.checked
   var includeNumbers = includeNumbersElement.checked
   var includeSpecial = includeSpecialElement.checked
-//resets password to empty upon press
-  let combinedArray = []
+  generateArray(includeLowerCase, includeUpperCase, includeNumbers, includeSpecial); 
+}
+function generateArray(includeLowerCase, includeUpperCase, includeNumbers, includeSpecial) {
+  // console.log(includeLowerCase, includeUpperCase, includeNumbers, includeSpecial);
+  var length = slider.value;
+  let combinedArray = [];
 //sets content of password based on checkbox
-  if (includeLowerCase) {
-    combinedArray = combinedArray.concat(lowerCase)
+  if (includeLowerCase) combinedArray = combinedArray.concat(lowerCase);
+  if (includeUpperCase) combinedArray = combinedArray.concat(upperCase);
+  if (includeNumbers)   combinedArray = combinedArray.concat(numbers);
+  if (includeSpecial)   combinedArray = combinedArray.concat(special);
+  generatePassword(length, combinedArray)
+}
+function generatePassword(length, combinedArray) {
+  var result = "";
+  var characters = combinedArray.join("");
+  var charactersLength = characters.length;
+  for ( var i = 0; i < length; i++ ) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
-    if (includeUpperCase) {
-    combinedArray = combinedArray.concat(upperCase)
-  }
-    if (includeNumbers) {
-    combinedArray = combinedArray.concat(numbers)
-  }  
-    if (includeSpecial) {
-    combinedArray = combinedArray.concat(special)
-  }
-  //randomise function
-  function password(length) {
-    var result = "";
-    var characters = combinedArray.join("");
-    var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-  }
+  displayPassword(result)
+}
+function displayPassword(password) {
   textArea = document.getElementById("password");
-  textArea.value = password(slider.value)
-  }
+  textArea.value = password
+}
+
+//guarateedcharacter array that holds boolean
+//have at least one character from guarantee dfor each category
+// make sure to aacount for length changes

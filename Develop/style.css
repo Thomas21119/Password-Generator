@@ -109,10 +109,6 @@ button[disabled] {
   opacity: 1;
 }
 
-.selectors {
-  text-align: left;
-}
-
 .float-right {
   float: right;
 }
