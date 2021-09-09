@@ -52,13 +52,13 @@ This homework is graded based on the following criteria:
 
 ### Deployment: 32%
 
-* Application deployed at live URL.
+* Application deployed at live URL. <!--done-->
 
-* Application loads with no errors.
+* Application loads with no errors. <!--done-->
 
-* Application GitHub URL submitted.
+* Application GitHub URL submitted. 
 
-* GitHub repository that contains application code.
+* GitHub repository that contains application code. <!--done-->
 
 ### Application Quality: 15%
 
@@ -78,7 +78,7 @@ This homework is graded based on the following criteria:
 
 * Repository contains multiple descriptive commit messages. <!--done-->
 
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
+* Repository contains quality readme file with description, screenshot, and link to deployed application. <!--done-->
 
 ## Review
 
