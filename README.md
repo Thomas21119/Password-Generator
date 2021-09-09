@@ -3,4 +3,5 @@ a basic password generator where people can select what they would like to hhave
 ![ScreenShot](https://github.com/Thomas21119/Password-Generator/blob/main/Assets/Password%20Generator%20-%20Avast%20Secure%20Browser%209_09_2021%208_32_43%20PM.png?raw=true)
 
 deployed application: https://thomas21119.github.io/Password-Generator/
+<br>
 github link:          https://github.com/Thomas21119/Password-Generator
