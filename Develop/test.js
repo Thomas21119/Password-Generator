@@ -24,6 +24,7 @@ var includeSpecialElement = document.getElementById('special')
 //link to button
 var generatePasswordEL = document.getElementById('generate')
 
+// creates variables for when checkboxes are "true"/ticked
 generatePasswordEL.addEventListener('click', passwordContents)
 function passwordContents() {
   var includeLowerCase =  includeLowerCaseElement.checked
@@ -32,17 +33,17 @@ function passwordContents() {
   var includeSpecial = includeSpecialElement.checked
   generateArray(includeLowerCase, includeUpperCase, includeNumbers, includeSpecial); 
 }
+// creates the array of final password contents
 function generateArray(includeLowerCase, includeUpperCase, includeNumbers, includeSpecial) {
-  // console.log(includeLowerCase, includeUpperCase, includeNumbers, includeSpecial);
   var length = slider.value;
   let combinedArray = [];
-//sets content of password based on checkbox
   if (includeLowerCase) combinedArray = combinedArray.concat(lowerCase);
   if (includeUpperCase) combinedArray = combinedArray.concat(upperCase);
   if (includeNumbers)   combinedArray = combinedArray.concat(numbers);
   if (includeSpecial)   combinedArray = combinedArray.concat(special);
   generatePassword(length, combinedArray)
 }
+//generates the password with combined array
 function generatePassword(length, combinedArray) {
   var result = "";
   var characters = combinedArray.join("");
@@ -52,11 +53,8 @@ function generatePassword(length, combinedArray) {
   }
   displayPassword(result)
 }
+// display final password
 function displayPassword(password) {
   textArea = document.getElementById("password");
   textArea.value = password
 }
-
-//guarateedcharacter array that holds boolean
-//have at least one character from guarantee dfor each category
-// make sure to aacount for length changes

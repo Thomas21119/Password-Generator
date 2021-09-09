@@ -18,20 +18,20 @@ SO THAT I can create a strong password that provides greater security
 
 ```
 GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
+WHEN I click the button to generate a password                                
+THEN I am presented with a series of prompts for password criteria                                    <!--done but with checkboxes-->
 WHEN prompted for password criteria
-THEN I select which criteria to include in the password
+THEN I select which criteria to include in the password                                               <!--done but with checkboxes-->
 WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
+THEN I choose a length of at least 8 characters and no more than 128 characters                       <!--done but with slider-->
 WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters     <!--done but with checkboxes-->
 WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
+THEN my input should be validated and at least one character type should be selected                  <!--doesnt give password>
 WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
+THEN a password is generated that matches the selected criteria                                       <!--Done-->
 WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+THEN the password is either displayed in an alert or written to the page                              <!--done-->
 ```
 
 ## Mock-Up
@@ -48,7 +48,7 @@ This homework is graded based on the following criteria:
 
 * Satisfies all of the preceding acceptance criteria plus the following:
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.    <!--done-->
 
 ### Deployment: 32%
 
@@ -62,21 +62,21 @@ This homework is graded based on the following criteria:
 
 ### Application Quality: 15%
 
-* Application user experience is intuitive and easy to navigate.
+* Application user experience is intuitive and easy to navigate.         <!--done-->
 
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
+* Application user interface style is clean and polished.               <!--done could use work-->
+ 
+* Application resembles the mock-up functionality provided in the homework instructions. <!--done-->
 
 ### Repository Quality: 13%
 
-* Repository has a unique name.
+* Repository has a unique name. <!--done-->
 
-* Repository follows best practices for file structure and naming conventions.
+* Repository follows best practices for file structure and naming conventions. <!--done-->
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc. 
 
-* Repository contains multiple descriptive commit messages.
+* Repository contains multiple descriptive commit messages. <!--done-->
 
 * Repository contains quality readme file with description, screenshot, and link to deployed application.
 

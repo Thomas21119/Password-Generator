@@ -105,16 +105,8 @@ button[disabled] {
   transition: opacity .2s;
 }
 
-ul {
-  list-style: none;
-}
-
 .slider:hover {
   opacity: 1;
-}
-
-.selectors {
-  text-align: left;
 }
 
 .float-right {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="form">
       <header>
         <h1>Password Generator</h1>
       </header>
@@ -21,7 +21,7 @@
           <textarea
             readonly
             id="password"
-            placeholder="Your Secure Password" 
+            placeholder="Please select one or more checkboxes and press generate to create your secure password!" 
             aria-label="Generated Password"
           ></textarea>
         </div>
@@ -33,7 +33,7 @@
           <ul class="selectors">
             <li>  <input type="checkbox" class="checkbox" id="lowerCase"> Lower Case:  </li>
             <li>  <input type="checkbox" class="checkbox" id="upperCase"> Upper Case:  </li>
-            <li>  <input type="checkbox" class="checkbox" id="specialCharacters"> Special Characters:</li>
+            <li>  <input type="checkbox" class="checkbox" id="special"> Special Characters:</li>
             <li>  <input type="checkbox" class="checkbox" id="numbers">  Numbers:</li>
           </ul>
         </div>
