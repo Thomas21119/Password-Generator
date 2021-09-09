@@ -9,11 +9,13 @@
   </head>
   <body>
     <div class="wrapper" id="form">
+      <!-- page title -->
       <header>
         <h1>Password Generator</h1>
       </header>
       <div class="card">
         <div class="card-header">
+          <!--heading-->
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
@@ -26,10 +28,12 @@
           ></textarea>
         </div>
         <div class="card-footer">
+          <!--List of slider and button-->
           <ul>
             <li>  Number Of Digits<input type="range" min="8" max="128" value="64" class="slider" id="range" /> <span id="showNumber"></span></li>
             <li>  <button id="generate" class="btn">Generate Password</button> </li>
           </ul>
+          <!--checkboxes for password inclusions-->
           <ul class="selectors">
             <li>  <input type="checkbox" class="checkbox" id="lowerCase"> Lower Case:  </li>
             <li>  <input type="checkbox" class="checkbox" id="upperCase"> Upper Case:  </li>

@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* sets height and size of page */
 html,
 body,
 .wrapper {
@@ -12,17 +13,20 @@ body,
   padding: 0;
 }
 
+/* base font and background color */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
+/* easily wrap anything */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+/* header */
 header {
   text-align: center;
   padding: 20px;
@@ -30,6 +34,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* main area of generator */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -42,6 +47,7 @@ header {
   padding: 30px 40px;
 }
 
+/* card header background color */
 .card-header::after {
   content: " ";
   display: block;
@@ -50,14 +56,17 @@ header {
   height: 2px;
 }
 
+/* card body height */
 .card-body {
   min-height: 100px;
 }
 
+/* card footer placement */
 .card-footer {
   text-align: center;
 }
 
+/* placement and color of footer */
 .card-footer::before {
   content: " ";
   display: block;
@@ -66,12 +75,14 @@ header {
   height: 2px;
 }
 
+/*  color of footer */
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
 
+/* button display */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -88,11 +99,13 @@ header {
   cursor: pointer;
 }
 
+/* button when disabled */
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
+/* slider */
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
@@ -105,14 +118,17 @@ button[disabled] {
   transition: opacity .2s;
 }
 
+/* slider placement */
 .slider:hover {
   opacity: 1;
 }
 
+/* makes anything float right */
 .float-right {
   float: right;
 }
 
+/* password appearance */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -134,6 +150,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* changes for screen size */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
